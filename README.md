@@ -27,11 +27,15 @@ Options
   -v, --version
 ```
 
+Output is intended to be copy-paste compatible with "Keep a CHANGELOG"
+
 
 ## See Also
 
 -   [dependency-diff](https://www.npmjs.com/package/dependency-diff)
 
 -   [execa](https://github.com/sindresorhus/execa)
+
+-   [Keep a CHANGELOG](http://keepachangelog.com/)
 
 -   [semver](https://github.com/npm/node-semver)
