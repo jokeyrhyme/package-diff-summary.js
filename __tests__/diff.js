@@ -10,7 +10,7 @@ test('deltaToMarkdown()', () => {
       { name: 'dropped', version: '', operation: 'delete' },
       { name: 'rolledback', version: '1.2.3', operation: 'edit' },
       { name: 'updated', version: '2.3.4', operation: 'edit' },
-      { name: 'execa', version: '2.3.4', operation: 'edit' },
+      { name: 'execa', version: '2.3.4', operation: 'edit' }
     ]
   }
   const oldPkg = {

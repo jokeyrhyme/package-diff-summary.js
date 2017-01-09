@@ -40,4 +40,6 @@ Output is intended to be copy-paste compatible with "Keep a CHANGELOG"
 
 -   [got](https://github.com/sindresorhus/got)
 
+-   [read-pkg-up](https://github.com/sindresorhus/read-pkg-up)
+
 -   [semver](https://github.com/npm/node-semver)

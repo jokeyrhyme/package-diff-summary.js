@@ -36,4 +36,4 @@ updateNodejsNotifier()
 
 const main = require('../index.js').main
 
-main(cli.input, cli.pkg, cli.flags)
+main(cli.input, cli.flags)
