@@ -3,6 +3,19 @@
 compare package.json files to create CHANGELOG.md entries
 
 
+## Installation
+
+```
+npm install --global package-diff-summary
+```
+
+OR
+
+```
+yarn global add package-diff-summary
+```
+
+
 ## Usage
 
 ```
