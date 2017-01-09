@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+/* @flow */
 /* eslint-disable no-console */
 
 'use strict'
@@ -10,7 +11,7 @@ const meow = require('meow')
 
 const cli = meow(`
   Usage
-    $ package-diff-summary <commit>
+    $ package-diff-summary <revision>
 
   Options
     -h, --help
@@ -23,7 +24,7 @@ const cli = meow(`
 })
 
 if (!cli.input[0]) {
-  console.error(os.EOL + 'Error: no commit specified')
+  console.error(os.EOL + 'Error: no revision specified')
   cli.showHelp(1) // exits with process.exitCode = 1
 }
 
@@ -32,3 +33,7 @@ updateNotifier({ pkg: cli.pkg }).notify()
 
 const { updateNodejsNotifier } = require('update-nodejs-notifier')
 updateNodejsNotifier()
+
+const main = require('../index.js').main
+
+main(cli.input, cli.pkg, cli.flags)

@@ -10,6 +10,8 @@
     "url": "https://github.com/jokeyrhyme/package-diff-summary.js/issues"
   },
   "dependencies": {
+    "dependency-diff": "^1.0.4",
+    "execa": "^0.6.0",
     "meow": "^3.7.0",
     "update-nodejs-notifier": "^1.1.0",
     "update-notifier": "^1.0.3"

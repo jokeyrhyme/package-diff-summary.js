@@ -7,9 +7,16 @@ compare package.json files to create CHANGELOG.md entries
 
 ```
 Usage
-  $ package-diff-summary <commit>
+  $ package-diff-summary <revision>
 
 Options
   -h, --help
   -v, --version
 ```
+
+
+## See Also
+
+-   [dependency-diff](https://www.npmjs.com/package/dependency-diff)
+
+-   [execa](https://github.com/sindresorhus/execa)
