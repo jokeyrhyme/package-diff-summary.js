@@ -1,35 +1,24 @@
 {
   "name": "package-diff-summary",
-  "version": "0.1.0",
   "description": "compare package.json files to create CHANGELOG.md entries",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "posttest": "npm run eslint && npm run flow_check && npm run fixpack",
-    "flow_check": "flow check",
-    "eslint": "eslint --fix --cache .",
-    "fixpack": "fixpack"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jokeyrhyme/package-diff-summary.js.git"
-  },
-  "keywords": [
-    "package",
-    "package.json",
-    "compare",
-    "diff",
-    "summary",
-    "git",
-    "changelog",
-    "change log"
-  ],
+  "version": "0.1.0",
   "author": "Ron Waldon <jokeyrhyme@gmail.com> (https://github.com/jokeyrhyme)",
-  "license": "MIT",
+  "bin": {
+    "package-diff-summary": "bin/index.js"
+  },
   "bugs": {
     "url": "https://github.com/jokeyrhyme/package-diff-summary.js/issues"
   },
-  "homepage": "https://github.com/jokeyrhyme/package-diff-summary.js#readme",
+  "dependencies": {
+    "eslint": "3.13.0",
+    "eslint-config-standard": "6.2.1",
+    "eslint-plugin-node": "3.0.5",
+    "eslint-plugin-promise": "3.4.0",
+    "eslint-plugin-standard": "2.0.1",
+    "fixpack": "2.3.1",
+    "flow-bin": "0.37.4",
+    "meow": "^3.7.0"
+  },
   "devDependencies": {
     "eslint": "^3.13.0",
     "eslint-config-standard": "^6.2.1",
@@ -39,20 +28,35 @@
     "fixpack": "^2.3.1",
     "flow-bin": "^0.37.4"
   },
+  "directories": {
+    "test": "test"
+  },
   "engines": {
     "node": ">=6",
     "npm": ">=4"
   },
-  "directories": {
-    "test": "test"
+  "homepage": "https://github.com/jokeyrhyme/package-diff-summary.js#readme",
+  "keywords": [
+    "change log",
+    "changelog",
+    "compare",
+    "diff",
+    "git",
+    "package",
+    "package.json",
+    "summary"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jokeyrhyme/package-diff-summary.js.git"
   },
-  "dependencies": {
-    "eslint": "3.13.0",
-    "eslint-config-standard": "6.2.1",
-    "eslint-plugin-node": "3.0.5",
-    "eslint-plugin-standard": "2.0.1",
-    "eslint-plugin-promise": "3.4.0",
-    "fixpack": "2.3.1",
-    "flow-bin": "0.37.4"
+  "scripts": {
+    "eslint": "eslint --fix --cache .",
+    "fixpack": "fixpack",
+    "flow_check": "flow check",
+    "posttest": "npm run eslint && npm run flow_check && npm run fixpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
