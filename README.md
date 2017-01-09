@@ -20,3 +20,5 @@ Options
 -   [dependency-diff](https://www.npmjs.com/package/dependency-diff)
 
 -   [execa](https://github.com/sindresorhus/execa)
+
+-   [semver](https://github.com/npm/node-semver)

@@ -1,0 +1,46 @@
+exports[`test deltaToMarkdown() 1`] = `
+"
+### Changed
+
+-   depend upon added 1.2.3
+
+-   no longer depend upon dropped
+
+-   update rolledback to 1.2.3 (from 2.3.4)
+
+-   rollback updated to 2.3.4 (from 1.2.3)
+"
+`;
+
+exports[`test diffPackages() 1`] = `
+Object {
+  "dependencies": Array [
+    Object {
+      "cmd": "npm uninstall dropped",
+      "name": "dropped",
+      "operation": "delete",
+      "version": "1.2.3",
+    },
+    Object {
+      "cmd": "npm install \"rolledback@1.2.3\" --spin=false --color=true --production --loglevel=http",
+      "name": "rolledback",
+      "operation": "edit",
+      "version": "1.2.3",
+    },
+    Object {
+      "cmd": "npm install \"updated@2.3.4\" --spin=false --color=true --production --loglevel=http",
+      "name": "updated",
+      "operation": "edit",
+      "version": "2.3.4",
+    },
+    Object {
+      "cmd": "npm install \"added@1.2.3\" --spin=false --color=true --production --loglevel=http",
+      "name": "added",
+      "operation": "new",
+      "version": "1.2.3",
+    },
+  ],
+  "devDependencies": Array [],
+  "optionalDependencies": Array [],
+}
+`;
