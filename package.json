@@ -21,7 +21,8 @@
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-standard": "^2.0.1",
     "fixpack": "^2.3.1",
-    "flow-bin": "^0.37.4"
+    "flow-bin": "^0.37.4",
+    "jest": "^18.1.0"
   },
   "directories": {
     "test": "test"
@@ -31,6 +32,14 @@
     "npm": ">=4"
   },
   "homepage": "https://github.com/jokeyrhyme/package-diff-summary.js#readme",
+  "jest": {
+    "collectCoverage": true,
+    "coverageThreshold": {
+      "global": {
+        "lines": 90
+      }
+    }
+  },
   "keywords": [
     "change log",
     "changelog",
@@ -51,7 +60,8 @@
     "eslint": "eslint --fix --cache .",
     "fixpack": "fixpack",
     "flow_check": "flow check",
+    "jest": "jest",
     "posttest": "npm run eslint && npm run flow_check && npm run fixpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run jest"
   }
 }
