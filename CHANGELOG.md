@@ -4,6 +4,9 @@
 ## Unreleased
 
 
+## 1.0.1 - 2017-01-10
+
+
 ### Changed
 
 -   depend upon [read-pkg-up](https://www.npmjs.com/package/read-pkg-up) ^2.0.0
