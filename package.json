@@ -40,7 +40,7 @@
     "flow-bin": "^0.37.4"
   },
   "engines": {
-    "node": ">=7",
+    "node": ">=6",
     "npm": ">=4"
   },
   "directories": {
