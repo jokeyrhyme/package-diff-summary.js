@@ -6,9 +6,11 @@ exports[`test deltaToMarkdown() 1`] = `
 
 -   no longer depend upon dropped
 
--   update rolledback to 1.2.3 (from 2.3.4)
+-   rollback rolledback to 1.2.3 (from 2.3.4)
 
--   rollback updated to 2.3.4 (from 1.2.3)
+-   update updated to 2.3.4 (from 1.2.3)
+
+-   update [execa](https://www.npmjs.com/package/execa) to 2.3.4 (from 1.2.3)
 "
 `;
 

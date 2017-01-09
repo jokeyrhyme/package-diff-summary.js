@@ -38,4 +38,6 @@ Output is intended to be copy-paste compatible with "Keep a CHANGELOG"
 
 -   [Keep a CHANGELOG](http://keepachangelog.com/)
 
+-   [got](https://github.com/sindresorhus/got)
+
 -   [semver](https://github.com/npm/node-semver)
