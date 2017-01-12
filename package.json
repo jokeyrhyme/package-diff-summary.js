@@ -12,6 +12,7 @@
   "dependencies": {
     "dependency-diff": "^1.0.4",
     "execa": "^0.6.0",
+    "github-url-from-git": "^1.5.0",
     "got": "^6.7.1",
     "meow": "^3.7.0",
     "read-pkg-up": "^2.0.0",

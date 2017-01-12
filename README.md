@@ -38,6 +38,8 @@ Output is intended to be copy-paste compatible with "Keep a CHANGELOG"
 
 -   [Keep a CHANGELOG](http://keepachangelog.com/)
 
+-   [github-url-from-git](https://github.com/tj/node-github-url-from-git)
+
 -   [got](https://github.com/sindresorhus/got)
 
 -   [read-pkg-up](https://github.com/sindresorhus/read-pkg-up)
