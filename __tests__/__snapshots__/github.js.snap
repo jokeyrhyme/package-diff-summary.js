@@ -1,0 +1,1 @@
+exports[`test projectUrlFor("execa") 1`] = `"https://github.com/sindresorhus/execa"`;
