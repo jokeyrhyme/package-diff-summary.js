@@ -4,6 +4,11 @@
 ## Unreleased
 
 
+### Added
+
+-   versions hyperlinks to CHANGELOG.md if found (#4)
+
+
 ## 1.0.1 - 2017-01-10
 
 

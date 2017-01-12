@@ -43,3 +43,13 @@ test('diffPackages()', () => {
   const result = diff.diffPackages(oldPkg, pkg)
   expect(result).toMatchSnapshot()
 })
+
+test('versionToMarkdown("1.2.3", "CHANGELOG.md")', () => {
+  const result = diff.versionToMarkdown('1.2.3', 'CHANGELOG.md')
+  expect(result).toMatchSnapshot()
+})
+
+test('versionToMarkdown("^1.2.3", "CHANGELOG.md")', () => {
+  const result = diff.versionToMarkdown('^1.2.3', 'CHANGELOG.md')
+  expect(result).toMatchSnapshot()
+})

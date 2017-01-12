@@ -46,3 +46,7 @@ Object {
   "optionalDependencies": Array [],
 }
 `;
+
+exports[`test versionToMarkdown("^1.2.3", "CHANGELOG.md") 1`] = `"^[1.2.3](CHANGELOG.md)"`;
+
+exports[`test versionToMarkdown("1.2.3", "CHANGELOG.md") 1`] = `"[1.2.3](CHANGELOG.md)"`;
