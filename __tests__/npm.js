@@ -15,3 +15,16 @@ test('nameToMarkdown("execa")', () => {
   return npm.nameToMarkdown('execa')
     .then((result) => expect(result).toMatchSnapshot())
 })
+
+test('repositoryUrlFor("does-not-exist")', () => {
+  const name = 'does-not-exist-' + (Math.random() * 1e6)
+  return npm.repositoryUrlFor(name)
+    .then((result) => {
+      expect(result).toBe('')
+    })
+})
+
+test('repositoryUrlFor("execa")', () => {
+  return npm.repositoryUrlFor('execa')
+    .then((result) => expect(result).toMatchSnapshot())
+})
