@@ -34,6 +34,8 @@ updateNotifier({ pkg: cli.pkg }).notify()
 const { updateNodejsNotifier } = require('update-nodejs-notifier')
 updateNodejsNotifier()
 
-const main = require('../index.js').main
-
-main(cli.input, cli.flags)
+const { enginesNotify } = require('package-engines-notifier')
+if (!enginesNotify({ pkg: cli.pkg })) {
+  const main = require('../index.js').main
+  main(cli.input, cli.flags)
+}
