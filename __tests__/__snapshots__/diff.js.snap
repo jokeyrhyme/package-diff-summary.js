@@ -49,4 +49,8 @@ Object {
 
 exports[`test versionToMarkdown("^1.2.3", "CHANGELOG.md") 1`] = `"^[1.2.3](CHANGELOG.md)"`;
 
+exports[`test versionToMarkdown("1.0.0-x.7.z.92", "CHANGELOG.md") 1`] = `"[1.0.0-x.7.z.92](CHANGELOG.md)"`;
+
 exports[`test versionToMarkdown("1.2.3", "CHANGELOG.md") 1`] = `"[1.2.3](CHANGELOG.md)"`;
+
+exports[`test versionToMarkdown("1.2.3-alpha.1", "CHANGELOG.md") 1`] = `"[1.2.3-alpha.1](CHANGELOG.md)"`;

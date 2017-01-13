@@ -49,6 +49,18 @@ test('versionToMarkdown("1.2.3", "CHANGELOG.md")', () => {
   expect(result).toMatchSnapshot()
 })
 
+// http://semver.org/#spec-item-9
+test('versionToMarkdown("1.2.3-alpha.1", "CHANGELOG.md")', () => {
+  const result = diff.versionToMarkdown('1.2.3-alpha.1', 'CHANGELOG.md')
+  expect(result).toMatchSnapshot()
+})
+
+// http://semver.org/#spec-item-9
+test('versionToMarkdown("1.0.0-x.7.z.92", "CHANGELOG.md")', () => {
+  const result = diff.versionToMarkdown('1.0.0-x.7.z.92', 'CHANGELOG.md')
+  expect(result).toMatchSnapshot()
+})
+
 test('versionToMarkdown("^1.2.3", "CHANGELOG.md")', () => {
   const result = diff.versionToMarkdown('^1.2.3', 'CHANGELOG.md')
   expect(result).toMatchSnapshot()
