@@ -4,11 +4,19 @@
 ## Unreleased
 
 
+## 1.2.0 - 2017-01-13
+
+
 ### Added
 
 -   support [SemVer pre-release versions](http://semver.org/#spec-item-9) e.g. 1.0.0-alpha.1
 
 -   version hyperlinks to matching GitHub Release if any (#5)
+
+
+### Changed
+
+-   depend upon [github](https://www.npmjs.com/package/github) ^[8.0.0](https://github.com/mikedeboer/node-github/blob/master/CHANGELOG.md)
 
 
 ## 1.1.0 - 2017-01-13

@@ -1,7 +1,7 @@
 {
   "name": "package-diff-summary",
   "description": "compare package.json files to create CHANGELOG.md entries",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": "Ron Waldon <jokeyrhyme@gmail.com> (https://github.com/jokeyrhyme)",
   "bin": {
     "package-diff-summary": "bin/index.js"
