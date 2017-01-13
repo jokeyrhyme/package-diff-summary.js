@@ -46,7 +46,7 @@ outputs this Markdown / CommonMark text:
 
 -   depend upon [github-url-from-git](https://www.npmjs.com/package/github-url-from-git) ^[1.5.0](https://github.com/visionmedia/node-github-url-from-git/blob/master/CHANGELOG.md)
 
--   depend upon [package-engines-notifier](https://www.npmjs.com/package/package-engines-notifier) ^[1.1.0](https://github.com/jokeyrhyme/package-engines-notifier.js/blob/master/CHANGELOG.md)
+-   depend upon [package-engines-notifier](https://www.npmjs.com/package/package-engines-notifier) ^[1.1.0](https://github.com/jokeyrhyme/package-engines-notifier.js/releases/tag/1.1.0)
 
 -   depend upon [read-pkg-up](https://www.npmjs.com/package/read-pkg-up) ^2.0.0
 ```
@@ -57,7 +57,7 @@ which looks like:
 >
 > -   depend upon [github-url-from-git](https://www.npmjs.com/package/github-url-from-git) ^[1.5.0](https://github.com/visionmedia/node-github-url-from-git/blob/master/CHANGELOG.md)
 >
-> -   depend upon [package-engines-notifier](https://www.npmjs.com/package/package-engines-notifier) ^[1.1.0](https://github.com/jokeyrhyme/package-engines-notifier.js/blob/master/CHANGELOG.md)
+> -   depend upon [package-engines-notifier](https://www.npmjs.com/package/package-engines-notifier) ^[1.1.0](https://github.com/jokeyrhyme/package-engines-notifier.js/releases/tag/1.1.0)
 >
 > -   depend upon [read-pkg-up](https://www.npmjs.com/package/read-pkg-up) ^2.0.0
 
@@ -69,6 +69,8 @@ which looks like:
 -   [execa](https://github.com/sindresorhus/execa)
 
 -   [Keep a CHANGELOG](http://keepachangelog.com/)
+
+-   [github](https://github.com/mikedeboer/node-github)
 
 -   [github-url-from-git](https://github.com/tj/node-github-url-from-git)
 

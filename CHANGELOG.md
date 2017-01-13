@@ -8,6 +8,8 @@
 
 -   support [SemVer pre-release versions](http://semver.org/#spec-item-9) e.g. 1.0.0-alpha.1
 
+-   version hyperlinks to matching GitHub Release if any (#5)
+
 
 ## 1.1.0 - 2017-01-13
 
