@@ -70,6 +70,8 @@ which looks like:
 
 -   [Keep a CHANGELOG](http://keepachangelog.com/)
 
+-   [github](https://github.com/mikedeboer/node-github)
+
 -   [github-url-from-git](https://github.com/tj/node-github-url-from-git)
 
 -   [got](https://github.com/sindresorhus/got)

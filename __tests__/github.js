@@ -25,3 +25,15 @@ test('projectUrlFor("execa")', () => {
   return github.projectUrlFor('execa')
     .then((result) => expect(result).toMatchSnapshot())
 })
+
+test('releaseUrlFor(thisProject, "1.0.0")', () => {
+  const projectUrl = 'https://github.com/jokeyrhyme/package-diff-summary.js'
+  return github.releaseUrlFor(projectUrl, '1.0.0')
+    .then((result) => expect(result).not.toBeDefined())
+})
+
+test('releaseUrlFor(thisProject, "1.1.0")', () => {
+  const projectUrl = 'https://github.com/jokeyrhyme/package-diff-summary.js'
+  return github.releaseUrlFor(projectUrl, '1.1.0')
+    .then((result) => expect(result).toMatchSnapshot())
+})
