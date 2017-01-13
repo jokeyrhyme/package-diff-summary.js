@@ -30,6 +30,38 @@ Options
 Output is intended to be copy-paste compatible with "Keep a CHANGELOG"
 
 
+## Example
+
+For this very project, these commands:
+
+```sh
+git checkout 1.1.0
+package-diff-summary 1.0.0
+```
+
+outputs this Markdown / CommonMark text:
+
+```md
+### Changed
+
+-   depend upon [github-url-from-git](https://www.npmjs.com/package/github-url-from-git) ^[1.5.0](https://github.com/visionmedia/node-github-url-from-git/blob/master/CHANGELOG.md)
+
+-   depend upon [package-engines-notifier](https://www.npmjs.com/package/package-engines-notifier) ^[1.1.0](https://github.com/jokeyrhyme/package-engines-notifier.js/blob/master/CHANGELOG.md)
+
+-   depend upon [read-pkg-up](https://www.npmjs.com/package/read-pkg-up) ^2.0.0
+```
+
+which looks like:
+
+> ### Changed
+>
+> -   depend upon [github-url-from-git](https://www.npmjs.com/package/github-url-from-git) ^[1.5.0](https://github.com/visionmedia/node-github-url-from-git/blob/master/CHANGELOG.md)
+>
+> -   depend upon [package-engines-notifier](https://www.npmjs.com/package/package-engines-notifier) ^[1.1.0](https://github.com/jokeyrhyme/package-engines-notifier.js/blob/master/CHANGELOG.md)
+>
+> -   depend upon [read-pkg-up](https://www.npmjs.com/package/read-pkg-up) ^2.0.0
+
+
 ## See Also
 
 -   [dependency-diff](https://www.npmjs.com/package/dependency-diff)
