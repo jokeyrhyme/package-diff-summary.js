@@ -11,6 +11,8 @@ exports[`test deltaToMarkdown() 1`] = `
 -   update updated to 2.3.4 (from 1.2.3)
 
 -   update [execa](https://www.npmjs.com/package/execa) to 2.3.4 (from 1.2.3)
+
+-   update [package-diff-summary](https://www.npmjs.com/package/package-diff-summary) to [1.2.0](https://github.com/jokeyrhyme/package-diff-summary.js/releases/tag/1.2.0) (from [1.1.0](https://github.com/jokeyrhyme/package-diff-summary.js/releases/tag/1.1.0))
 "
 `;
 

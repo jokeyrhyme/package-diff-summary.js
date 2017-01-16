@@ -2,4 +2,4 @@ exports[`test changelogUrlAt("https://github.com/tj/node-github-url-from-git") 1
 
 exports[`test projectUrlFor("execa") 1`] = `"https://github.com/sindresorhus/execa"`;
 
-exports[`test releaseUrlFor(thisProject, "1.1.0") 1`] = `"https://github.com/jokeyrhyme/package-diff-summary.js/releases/tag/1.1.0"`;
+exports[`test releaseUrlFor(thisProject, "1.1.0") 1`] = `undefined`;
