@@ -8,6 +8,8 @@
 
 -   uniform flow of version range to strict version (#11)
 
+-   GitHub Release URL for old version actually points to old version
+
 
 ## 1.2.0 - 2017-01-13
 

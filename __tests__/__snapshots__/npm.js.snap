@@ -1,3 +1,0 @@
-exports[`test nameToMarkdown("execa") 1`] = `"[execa](https://www.npmjs.com/package/execa)"`;
-
-exports[`test repositoryUrlFor("execa") 1`] = `"git+https://github.com/sindresorhus/execa.git"`;

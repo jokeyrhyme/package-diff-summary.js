@@ -12,8 +12,9 @@ test('nameToMarkdown("does-not-exist")', () => {
 })
 
 test('nameToMarkdown("execa")', () => {
+  const expected = '[execa](https://www.npmjs.com/package/execa)'
   return npm.nameToMarkdown('execa')
-    .then((result) => expect(result).toMatchSnapshot())
+    .then((result) => expect(result).toBe(expected))
 })
 
 test('repositoryUrlFor("does-not-exist")', () => {
@@ -25,6 +26,7 @@ test('repositoryUrlFor("does-not-exist")', () => {
 })
 
 test('repositoryUrlFor("execa")', () => {
+  const expected = 'git+https://github.com/sindresorhus/execa.git'
   return npm.repositoryUrlFor('execa')
-    .then((result) => expect(result).toMatchSnapshot())
+  .then((result) => expect(result).toBe(expected))
 })
