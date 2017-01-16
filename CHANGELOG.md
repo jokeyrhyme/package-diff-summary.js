@@ -4,6 +4,9 @@
 ## Unreleased
 
 
+## 1.2.1 - 2017-01-16
+
+
 ### Fixed
 
 -   uniform flow of version range to strict version (#11)
