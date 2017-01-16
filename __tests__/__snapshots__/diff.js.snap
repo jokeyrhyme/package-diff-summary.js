@@ -24,16 +24,16 @@ Object {
       "version": "1.2.3",
     },
     Object {
-      "cmd": "npm install \"rolledback@1.2.3\" --spin=false --color=true --production --loglevel=http",
+      "cmd": "npm install \"rolledback@~1.2.3\" --spin=false --color=true --production --loglevel=http",
       "name": "rolledback",
       "operation": "edit",
-      "version": "1.2.3",
+      "version": "~1.2.3",
     },
     Object {
-      "cmd": "npm install \"updated@2.3.4\" --spin=false --color=true --production --loglevel=http",
+      "cmd": "npm install \"updated@^2.3.4\" --spin=false --color=true --production --loglevel=http",
       "name": "updated",
       "operation": "edit",
-      "version": "2.3.4",
+      "version": "^2.3.4",
     },
     Object {
       "cmd": "npm install \"added@1.2.3\" --spin=false --color=true --production --loglevel=http",
@@ -46,8 +46,6 @@ Object {
   "optionalDependencies": Array [],
 }
 `;
-
-exports[`test versionToMarkdown("^1.2.3", "CHANGELOG.md") 1`] = `"^[1.2.3](CHANGELOG.md)"`;
 
 exports[`test versionToMarkdown("1.0.0-x.7.z.92", "CHANGELOG.md") 1`] = `"[1.0.0-x.7.z.92](CHANGELOG.md)"`;
 
