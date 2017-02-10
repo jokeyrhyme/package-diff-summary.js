@@ -29,7 +29,7 @@
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-standard": "^2.0.1",
     "fixpack": "^2.3.1",
-    "flow-bin": "^0.37.4",
+    "flow-bin": "^0.39.0",
     "jest": "^18.1.0"
   },
   "directories": {
