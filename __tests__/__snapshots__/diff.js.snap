@@ -1,4 +1,6 @@
-exports[`test deltaToMarkdown() 1`] = `
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`deltaToMarkdown() 1`] = `
 "
 ### Changed
 
@@ -16,7 +18,7 @@ exports[`test deltaToMarkdown() 1`] = `
 "
 `;
 
-exports[`test diffPackages() 1`] = `
+exports[`diffPackages() 1`] = `
 Object {
   "dependencies": Array [
     Object {
@@ -26,19 +28,19 @@ Object {
       "version": "1.2.3",
     },
     Object {
-      "cmd": "npm install \"rolledback@~1.2.3\" --spin=false --color=true --production --loglevel=http",
+      "cmd": "npm install \\"rolledback@~1.2.3\\" --spin=false --color=true --production --loglevel=http",
       "name": "rolledback",
       "operation": "edit",
       "version": "~1.2.3",
     },
     Object {
-      "cmd": "npm install \"updated@^2.3.4\" --spin=false --color=true --production --loglevel=http",
+      "cmd": "npm install \\"updated@^2.3.4\\" --spin=false --color=true --production --loglevel=http",
       "name": "updated",
       "operation": "edit",
       "version": "^2.3.4",
     },
     Object {
-      "cmd": "npm install \"added@1.2.3\" --spin=false --color=true --production --loglevel=http",
+      "cmd": "npm install \\"added@1.2.3\\" --spin=false --color=true --production --loglevel=http",
       "name": "added",
       "operation": "new",
       "version": "1.2.3",
@@ -49,8 +51,8 @@ Object {
 }
 `;
 
-exports[`test versionToMarkdown("1.0.0-x.7.z.92", "CHANGELOG.md") 1`] = `"[1.0.0-x.7.z.92](CHANGELOG.md)"`;
+exports[`versionToMarkdown("1.0.0-x.7.z.92", "CHANGELOG.md") 1`] = `"[1.0.0-x.7.z.92](CHANGELOG.md)"`;
 
-exports[`test versionToMarkdown("1.2.3", "CHANGELOG.md") 1`] = `"[1.2.3](CHANGELOG.md)"`;
+exports[`versionToMarkdown("1.2.3", "CHANGELOG.md") 1`] = `"[1.2.3](CHANGELOG.md)"`;
 
-exports[`test versionToMarkdown("1.2.3-alpha.1", "CHANGELOG.md") 1`] = `"[1.2.3-alpha.1](CHANGELOG.md)"`;
+exports[`versionToMarkdown("1.2.3-alpha.1", "CHANGELOG.md") 1`] = `"[1.2.3-alpha.1](CHANGELOG.md)"`;
