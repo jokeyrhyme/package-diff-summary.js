@@ -4,9 +4,19 @@
 ## Unreleased
 
 
+## 1.3.0 - 2017-02-22
+
+
 ### Added
 
 -   authenticate with GitHub using GITHUB\_OAUTH\_TOKEN environment variable (if any)
+
+
+### Changed
+
+-   update [github](https://www.npmjs.com/package/github) to [9.0.0](https://github.com/mikedeboer/node-github/blob/master/CHANGELOG.md) (from [8.0.0](https://github.com/mikedeboer/node-github/blob/master/CHANGELOG.md))
+
+-   update [update-notifier](https://www.npmjs.com/package/update-notifier) to 2.1.0 (from [1.0.3](https://github.com/yeoman/update-notifier/releases/tag/v1.0.3))
 
 
 ## 1.2.1 - 2017-01-16
