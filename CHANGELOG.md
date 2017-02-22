@@ -4,6 +4,11 @@
 ## Unreleased
 
 
+### Added
+
+-   authenticate with GitHub using GITHUB\_OAUTH\_TOKEN environment variable (if any)
+
+
 ## 1.2.1 - 2017-01-16
 
 

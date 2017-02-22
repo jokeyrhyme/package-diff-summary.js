@@ -62,6 +62,18 @@ which looks like:
 > -   depend upon [read-pkg-up](https://www.npmjs.com/package/read-pkg-up) ^2.0.0
 
 
+## Configuration
+
+
+### GITHUB\_OAUTH\_TOKEN
+
+Generate a new [GitHub Personal Access Token](https://github.com/settings/tokens) without any special permissions,
+and set this as the value for the GITHUB\_OAUTH\_TOKEN environment variable.
+
+This will reduce the likelihood of rate-limiting by GitHub's API,
+which will in turn increase the accuracy of the hyperlinks discovered.
+
+
 ## See Also
 
 -   [dependency-diff](https://www.npmjs.com/package/dependency-diff)

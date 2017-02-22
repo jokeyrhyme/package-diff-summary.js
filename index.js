@@ -11,6 +11,14 @@ function main (
 ) {
   let oldPkg
 
+  if (!process.env.GITHUB_OAUTH_TOKEN) {
+    /* eslint-disable no-console */ // show tip for better user experience
+    console.log(`
+    TIP: set the GITHUB_OAUTH_TOKEN environment variable to improve accuracy
+`)
+    /* eslint-enable no-console */
+  }
+
   return Promise.all([
     readPkgUp({ cwd: process.cwd() }),
     git.gitShow(input[0], 'package.json')
