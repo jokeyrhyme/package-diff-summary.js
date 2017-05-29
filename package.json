@@ -14,7 +14,7 @@
     "execa": "^0.6.0",
     "github": "^9.0.0",
     "github-url-from-git": "^1.5.0",
-    "got": "^6.7.1",
+    "got": "^7.0.0",
     "meow": "^3.7.0",
     "package-engines-notifier": "^1.1.0",
     "read-pkg-up": "^2.0.0",
