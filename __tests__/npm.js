@@ -1,32 +1,32 @@
 /* @flow */
-'use strict'
+'use strict';
 
-const npm = require('../lib/npm.js')
+const npm = require('../lib/npm.js');
 
 test('nameToMarkdown("does-not-exist")', () => {
-  const name = 'does-not-exist-' + (Math.random() * 1e6)
-  return npm.nameToMarkdown(name)
-    .then((result) => {
-      expect(result).toBe(name)
-    })
-})
+  const name = 'does-not-exist-' + Math.random() * 1e6;
+  return npm.nameToMarkdown(name).then(result => {
+    expect(result).toBe(name);
+  });
+});
 
 test('nameToMarkdown("execa")', () => {
-  const expected = '[execa](https://www.npmjs.com/package/execa)'
-  return npm.nameToMarkdown('execa')
-    .then((result) => expect(result).toBe(expected))
-})
+  const expected = '[execa](https://www.npmjs.com/package/execa)';
+  return npm
+    .nameToMarkdown('execa')
+    .then(result => expect(result).toBe(expected));
+});
 
 test('repositoryUrlFor("does-not-exist")', () => {
-  const name = 'does-not-exist-' + (Math.random() * 1e6)
-  return npm.repositoryUrlFor(name)
-    .then((result) => {
-      expect(result).toBe('')
-    })
-})
+  const name = 'does-not-exist-' + Math.random() * 1e6;
+  return npm.repositoryUrlFor(name).then(result => {
+    expect(result).toBe('');
+  });
+});
 
 test('repositoryUrlFor("execa")', () => {
-  const expected = 'git+https://github.com/sindresorhus/execa.git'
-  return npm.repositoryUrlFor('execa')
-  .then((result) => expect(result).toBe(expected))
-})
+  const expected = 'git+https://github.com/sindresorhus/execa.git';
+  return npm
+    .repositoryUrlFor('execa')
+    .then(result => expect(result).toBe(expected));
+});

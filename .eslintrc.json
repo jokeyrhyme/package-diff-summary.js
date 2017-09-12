@@ -1,10 +1,14 @@
 {
   "extends": [
     "eslint:recommended",
-    "plugin:node/recommended",
-    "standard"
+    "plugin:node/recommended"
   ],
+  "parserOptions": {
+    "ecmaVersion": 2017
+  },
   "plugins": [
-    "node"
+    "node",
+    "import",
+    "promise"
   ]
 }

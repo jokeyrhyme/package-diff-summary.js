@@ -4,6 +4,11 @@
 ## Unreleased
 
 
+### Changed
+
+-   MINOR: require Node.js 8.x or newer
+
+
 ## 1.3.0 - 2017-02-22
 
 

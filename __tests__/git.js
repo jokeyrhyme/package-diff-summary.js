@@ -1,11 +1,10 @@
 /* @flow */
-'use strict'
+'use strict';
 
-const git = require('../lib/git.js')
+const git = require('../lib/git.js');
 
 test('gitShow()', () => {
-  return git.gitShow('HEAD~1', 'README.md')
-    .then((contents) => {
-      expect(contents).toContain('# package-diff-summary.js')
-    })
-})
+  return git.gitShow('HEAD~1', 'README.md').then(contents => {
+    expect(contents).toContain('# package-diff-summary.js');
+  });
+});

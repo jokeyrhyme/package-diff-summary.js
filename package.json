@@ -1,13 +1,48 @@
 {
   "name": "package-diff-summary",
-  "description": "compare package.json files to create CHANGELOG.md entries",
   "version": "1.3.0",
+  "description": "compare package.json files to create CHANGELOG.md entries",
+  "keywords": [
+    "change log",
+    "changelog",
+    "compare",
+    "diff",
+    "git",
+    "package",
+    "package.json",
+    "summary"
+  ],
+  "homepage": "https://github.com/jokeyrhyme/package-diff-summary.js#readme",
+  "bugs": {
+    "url": "https://github.com/jokeyrhyme/package-diff-summary.js/issues"
+  },
+  "license": "MIT",
   "author": "Ron Waldon <jokeyrhyme@gmail.com> (https://github.com/jokeyrhyme)",
+  "files": [
+    "bin",
+    "lib",
+    "index.js"
+  ],
+  "main": "index.js",
   "bin": {
     "package-diff-summary": "bin/index.js"
   },
-  "bugs": {
-    "url": "https://github.com/jokeyrhyme/package-diff-summary.js/issues"
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jokeyrhyme/package-diff-summary.js.git"
+  },
+  "scripts": {
+    "eslint": "eslint --fix --cache .",
+    "flow": "npx -q flow-bin@^0.54.1 check",
+    "jest": "jest",
+    "nsp": "npx -q nsp check",
+    "sort-package-json": "npx -q sort-package-json",
+    "pretest": "npm run prettier && npm run eslint && npm run sort-package-json",
+    "test": "npm run jest && npm run nsp && npm run flow",
+    "prettier": "npx -q prettier --list-different --write \"{,!(build|coverage|dist|flow-typed|typings|vendor)/**/}*.{css,js,jsx,less,scss,ts,tsx}\" || exit 0"
   },
   "dependencies": {
     "dependency-diff": "^1.0.4",
@@ -24,28 +59,20 @@
   },
   "devDependencies": {
     "eslint": "^4.0.0",
-    "eslint-config-standard": "^10.0.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-node": "^5.1.0",
     "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^3.0.0",
-    "fixpack": "^2.3.1",
-    "flow-bin": "^0.46.0",
-    "jest": "^20.0.0"
-  },
-  "directories": {
-    "test": "test"
+    "jest": "^21.0.2",
+    "npx": "^9.6.0"
   },
   "engines": {
-    "node": ">=6",
+    "node": ">=8",
     "npm": ">=4"
   },
-  "files": [
-    "bin",
-    "lib",
-    "index.js"
+  "eslintIgnore": [
+    "coverage",
+    "flow-typed"
   ],
-  "homepage": "https://github.com/jokeyrhyme/package-diff-summary.js#readme",
   "jest": {
     "collectCoverage": true,
     "coverageThreshold": {
@@ -54,29 +81,8 @@
       }
     }
   },
-  "keywords": [
-    "change log",
-    "changelog",
-    "compare",
-    "diff",
-    "git",
-    "package",
-    "package.json",
-    "summary"
-  ],
-  "license": "MIT",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jokeyrhyme/package-diff-summary.js.git"
-  },
-  "scripts": {
-    "eslint": "eslint --fix --cache .",
-    "fixpack": "fixpack",
-    "flow_check": "flow check",
-    "jest": "jest",
-    "posttest": "npm run eslint && npm run flow_check",
-    "pretest": "npm run fixpack",
-    "test": "npm run jest"
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5"
   }
 }
