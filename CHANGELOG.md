@@ -13,9 +13,7 @@
 
 -   CHORE: update [execa](https://www.npmjs.com/package/execa) to 0.8.0 (from 0.6.0)
 
--   CHORE: update [github](https://www.npmjs.com/package/github) to [11.0.0](https://gi
-thub.com/mikedeboer/node-github/blob/master/CHANGELOG.md) (from [9.0.0](https://
-github.com/mikedeboer/node-github/blob/master/CHANGELOG.md))
+-   CHORE: update [github](https://www.npmjs.com/package/github) to [11.0.0](https://github.com/mikedeboer/node-github/blob/master/CHANGELOG.md) (from [9.0.0](https://github.com/mikedeboer/node-github/blob/master/CHANGELOG.md))
 
 -   CHORE: update [got](https://www.npmjs.com/package/got) to 7.0.0 (from 6.7.1)
 
