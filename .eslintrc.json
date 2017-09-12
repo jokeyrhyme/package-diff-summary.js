@@ -3,6 +3,9 @@
     "eslint:recommended",
     "plugin:node/recommended"
   ],
+  "parserOptions": {
+    "ecmaVersion": 2017
+  },
   "plugins": [
     "node",
     "import",
