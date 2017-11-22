@@ -47,7 +47,7 @@
   "dependencies": {
     "dependency-diff": "^1.0.4",
     "execa": "^0.8.0",
-    "github": "^11.0.0",
+    "github": "^12.0.5",
     "github-url-from-git": "^1.5.0",
     "got": "^7.0.0",
     "meow": "^3.7.0",
