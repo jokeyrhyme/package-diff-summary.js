@@ -61,7 +61,7 @@
     "eslint": "^4.0.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-node": "^5.1.0",
-    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-promise": "^4.1.1",
     "jest": "^21.0.2",
     "npx": "^9.6.0"
   },
