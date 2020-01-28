@@ -63,7 +63,7 @@
     "eslint-plugin-node": "^5.1.0",
     "eslint-plugin-promise": "^3.5.0",
     "jest": "^21.0.2",
-    "npx": "^9.6.0"
+    "npx": "^10.2.2"
   },
   "engines": {
     "node": ">=8",
