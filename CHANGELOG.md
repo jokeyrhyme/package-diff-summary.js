@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 3.0.0 - 2021-04-17
+
 ### Changed
 
 - MAJOR: require Node.js 12.x or newer
