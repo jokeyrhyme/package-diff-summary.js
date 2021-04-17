@@ -20,12 +20,12 @@ test('node bin/index.js', () => {
     .then(() => {
       expect(true).toBeNull(); // unexpected resolve
     })
-    .catch(err => {
+    .catch((err) => {
       expect(err).toBeDefined();
-      expect(err.code).toBe(1);
+      expect(err.exitCode).toBe(1);
     });
 });
 
 test('node bin/index.js HEAD~1', () => {
   return execa('node', [binPath, 'HEAD~1']);
-});
+}, 10000);

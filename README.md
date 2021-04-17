@@ -2,7 +2,6 @@
 
 compare package.json files to create CHANGELOG.md entries
 
-
 ## Installation
 
 ```
@@ -14,7 +13,6 @@ OR
 ```
 yarn global add package-diff-summary
 ```
-
 
 ## Usage
 
@@ -29,7 +27,6 @@ Options
 
 Output is intended to be copy-paste compatible with "Keep a CHANGELOG"
 
-
 ## Example
 
 For this very project, these commands:
@@ -42,52 +39,45 @@ package-diff-summary 1.0.0
 outputs this Markdown / CommonMark text:
 
 ```md
-### Changed
+- depend upon [github-url-from-git](https://www.npmjs.com/package/github-url-from-git) ^[1.5.0](https://github.com/visionmedia/node-github-url-from-git/blob/master/CHANGELOG.md)
 
--   depend upon [github-url-from-git](https://www.npmjs.com/package/github-url-from-git) ^[1.5.0](https://github.com/visionmedia/node-github-url-from-git/blob/master/CHANGELOG.md)
+- depend upon [package-engines-notifier](https://www.npmjs.com/package/package-engines-notifier) ^[1.1.0](https://github.com/jokeyrhyme/package-engines-notifier.js/releases/tag/1.1.0)
 
--   depend upon [package-engines-notifier](https://www.npmjs.com/package/package-engines-notifier) ^[1.1.0](https://github.com/jokeyrhyme/package-engines-notifier.js/releases/tag/1.1.0)
-
--   depend upon [read-pkg-up](https://www.npmjs.com/package/read-pkg-up) ^2.0.0
+- depend upon [read-pkg-up](https://www.npmjs.com/package/read-pkg-up) ^2.0.0
 ```
 
 which looks like:
 
-> ### Changed
+> - depend upon [github-url-from-git](https://www.npmjs.com/package/github-url-from-git) ^[1.5.0](https://github.com/visionmedia/node-github-url-from-git/blob/master/CHANGELOG.md)
 >
-> -   depend upon [github-url-from-git](https://www.npmjs.com/package/github-url-from-git) ^[1.5.0](https://github.com/visionmedia/node-github-url-from-git/blob/master/CHANGELOG.md)
+> - depend upon [package-engines-notifier](https://www.npmjs.com/package/package-engines-notifier) ^[1.1.0](https://github.com/jokeyrhyme/package-engines-notifier.js/releases/tag/1.1.0)
 >
-> -   depend upon [package-engines-notifier](https://www.npmjs.com/package/package-engines-notifier) ^[1.1.0](https://github.com/jokeyrhyme/package-engines-notifier.js/releases/tag/1.1.0)
->
-> -   depend upon [read-pkg-up](https://www.npmjs.com/package/read-pkg-up) ^2.0.0
-
+> - depend upon [read-pkg-up](https://www.npmjs.com/package/read-pkg-up) ^2.0.0
 
 ## Configuration
 
-
-### GITHUB\_OAUTH\_TOKEN
+### GITHUB_OAUTH_TOKEN
 
 Generate a new [GitHub Personal Access Token](https://github.com/settings/tokens) without any special permissions,
-and set this as the value for the GITHUB\_OAUTH\_TOKEN environment variable.
+and set this as the value for the `GITHUB_OAUTH_TOKEN` environment variable.
 
 This will reduce the likelihood of rate-limiting by GitHub's API,
 which will in turn increase the accuracy of the hyperlinks discovered.
 
-
 ## See Also
 
--   [dependency-diff](https://www.npmjs.com/package/dependency-diff)
+- [dependency-diff](https://www.npmjs.com/package/dependency-diff)
 
--   [execa](https://github.com/sindresorhus/execa)
+- [execa](https://github.com/sindresorhus/execa)
 
--   [Keep a CHANGELOG](http://keepachangelog.com/)
+- [Keep a CHANGELOG](http://keepachangelog.com/)
 
--   [github](https://github.com/mikedeboer/node-github)
+- [github](https://github.com/mikedeboer/node-github)
 
--   [github-url-from-git](https://github.com/tj/node-github-url-from-git)
+- [github-url-from-git](https://github.com/tj/node-github-url-from-git)
 
--   [got](https://github.com/sindresorhus/got)
+- [got](https://github.com/sindresorhus/got)
 
--   [read-pkg-up](https://github.com/sindresorhus/read-pkg-up)
+- [read-pkg-up](https://github.com/sindresorhus/read-pkg-up)
 
--   [semver](https://github.com/npm/node-semver)
+- [semver](https://github.com/npm/node-semver)

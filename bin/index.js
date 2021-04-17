@@ -26,7 +26,8 @@ const cli = meow(
   }
 );
 
-if (!cli.input[0]) {
+const previousVersion = cli.input[0];
+if (!previousVersion) {
   console.error(os.EOL + 'Error: no revision specified');
   cli.showHelp(1); // exits with process.exitCode = 1
 }
@@ -40,5 +41,14 @@ updateNodejsNotifier();
 const { enginesNotify } = require('package-engines-notifier');
 if (!enginesNotify({ pkg: cli.pkg })) {
   const main = require('../index.js').main;
-  main(cli.input);
+
+  if (!process.env.GITHUB_OAUTH_TOKEN) {
+    console.log(`
+    TIP: set the GITHUB_OAUTH_TOKEN environment variable to improve accuracy
+`);
+  }
+
+  main({ previousVersion, cwd: process.cwd() }).then((text) => {
+    console.log(text);
+  });
 }

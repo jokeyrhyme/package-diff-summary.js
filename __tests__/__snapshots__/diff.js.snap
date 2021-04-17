@@ -2,7 +2,6 @@
 
 exports[`deltaToMarkdown() 1`] = `
 "
-### Changed
 
 -   depend upon added 1.2.3
 
@@ -10,7 +9,7 @@ exports[`deltaToMarkdown() 1`] = `
 
 -   rollback rolledback to 1.2.3 (from 2.3.4)
 
--   update updated to 2.3.4 (from 1.2.3)
+-   update [updated](https://www.npmjs.com/package/updated) to 2.3.4 (from [1.2.3](https://github.com/ahmadnassri/node-updated/releases/tag/v1.2.3))
 
 -   update [execa](https://www.npmjs.com/package/execa) to 2.3.4 (from 1.2.3)
 
