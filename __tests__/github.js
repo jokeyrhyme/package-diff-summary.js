@@ -21,14 +21,14 @@ test('changelogUrlAt("https://github.com/tj/node-github-url-from-git")', () => {
 test('projectUrlFor("does-not-exist")', () => {
   const name = 'does-not-exist-' + Math.random() * 1e6;
   return github
-    .projectUrlFor(name)
+    .projectUrlFor(name, process.cwd())
     .then((result) => expect(result).not.toBeDefined());
 });
 
 test('projectUrlFor("execa")', () => {
   const expected = 'https://github.com/sindresorhus/execa';
   return github
-    .projectUrlFor('execa')
+    .projectUrlFor('execa', process.cwd())
     .then((result) => expect(result).toBe(expected));
 });
 

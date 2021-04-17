@@ -24,7 +24,7 @@ test('deltaToMarkdown()', () => {
     },
   };
   return diff
-    .deltaToMarkdown(delta, oldPkg)
+    .deltaToMarkdown(delta, oldPkg, process.cwd())
     .then((result) => expect(result).toMatchSnapshot());
 }, 10000);
 

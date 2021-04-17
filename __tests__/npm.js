@@ -19,7 +19,7 @@ test('nameToMarkdown("execa")', () => {
 
 test('repositoryUrlFor("does-not-exist")', () => {
   const name = 'does-not-exist-' + Math.random() * 1e6;
-  return npm.repositoryUrlFor(name).then((result) => {
+  return npm.repositoryUrlFor(name, process.cwd()).then((result) => {
     expect(result).toBe('');
   });
 });
@@ -27,6 +27,6 @@ test('repositoryUrlFor("does-not-exist")', () => {
 test('repositoryUrlFor("execa")', () => {
   const expected = 'git+https://github.com/sindresorhus/execa.git';
   return npm
-    .repositoryUrlFor('execa')
+    .repositoryUrlFor('execa', process.cwd())
     .then((result) => expect(result).toBe(expected));
 });
