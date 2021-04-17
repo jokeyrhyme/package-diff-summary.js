@@ -9,11 +9,13 @@ const diff = require('./lib/diff.js');
 async function main(
   { previousVersion, cwd } /* : { previousVersion: string, cwd: string } */
 ) /* : Promise<string> */ {
-  const oldPkg = JSON.parse(await git.gitShow(previousVersion, 'package.json'));
+  const oldPkg = JSON.parse(
+    await git.gitShow(previousVersion, 'package.json', cwd)
+  );
   const { packageJson } = await readPkgUp({ cwd });
 
   const delta = diff.diffPackages(oldPkg, packageJson);
-  const text = await diff.deltaToMarkdown(delta, oldPkg); // CLI tool, relax!
+  const text = await diff.deltaToMarkdown(delta, oldPkg, cwd); // CLI tool, relax!
   return text;
 }
 
