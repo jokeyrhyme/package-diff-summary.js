@@ -25,8 +25,8 @@ test('deltaToMarkdown()', () => {
   };
   return diff
     .deltaToMarkdown(delta, oldPkg)
-    .then(result => expect(result).toMatchSnapshot());
-});
+    .then((result) => expect(result).toMatchSnapshot());
+}, 10000);
 
 test('diffPackages()', () => {
   const oldPkg = {

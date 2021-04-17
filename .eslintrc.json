@@ -1,14 +1,12 @@
 {
-  "extends": [
-    "eslint:recommended",
-    "plugin:node/recommended"
-  ],
-  "parserOptions": {
-    "ecmaVersion": 2017
+  "env": {
+    "commonjs": true,
+    "es6": true,
+    "node": true
   },
-  "plugins": [
-    "node",
-    "import",
-    "promise"
-  ]
+  "extends": ["eslint:recommended", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": 2019
+  },
+  "plugins": ["prettier"]
 }
