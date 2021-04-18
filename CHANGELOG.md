@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 3.0.1 - 2021-04-18
+
 ### Fixed
 
 - current working directory not being passed to `git` and `npm` commands
